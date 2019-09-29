@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build First Application') {
       steps {
-        build(propagate: true, wait: true, job: 'first-application')
+        build(propagate: true, job: 'first-application')
       }
     }
   }
