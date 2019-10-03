@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build First Application') {
       steps {
-        build 'first-application'
+        sh 'kubectl get nodes'
       }
     }
   }
